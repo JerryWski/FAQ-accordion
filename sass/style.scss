@@ -8,7 +8,6 @@
 *::after {
   margin: 0;
   padding: 0;
-  
 }
 
 html {
@@ -17,7 +16,6 @@ html {
   color: hsl(238, 29%, 16%);
 }
 body {
-  
   background-image: linear-gradient(
     182deg,
     rgba(176, 107, 234, 1) 0%,
@@ -32,7 +30,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .accordion {
@@ -65,40 +63,39 @@ main {
     font-size: 2.5rem;
   }
 
-  &__box{
-    padding: .8em;
+  &__box {
+    padding: 0.8em;
     display: flex;
     flex-direction: column;
     text-align: left;
     width: 100%;
     font-size: 1.1rem;
 
-  &--question {
-    cursor: pointer;
-    transition: color .3s ease;
-  }
-  &--question:hover {
-    color: orangered;
-  }  
+    &--question {
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    &--question:hover {
+      color: orangered;
+    }
 
-  span {
-    float: right;
-  }
+    span {
+      float: right;
+    }
 
-  .rotate-span {
-    transform: rotate(180deg);
-  }
+    .rotate-span {
+      transform: rotate(180deg);
+    }
 
-  .accordion__info {
-    color: hsl(240, 6%, 50%);
-    font-size: 1rem;
-    padding-top: 1em;
-    display: none;
-  }
-  .active {
-    display: flex;
-    
-  }
+    .accordion__info {
+      color: hsl(240, 6%, 50%);
+      font-size: 1rem;
+      padding-top: 1em;
+      display: none;
+    }
+    .active {
+      display: flex;
+    }
   }
   hr {
     margin-top: 1.5em;
@@ -106,7 +103,5 @@ main {
   }
 }
 
-
-@media (min-width:475px) {
-  
+@media (min-width: 475px) {
 }
