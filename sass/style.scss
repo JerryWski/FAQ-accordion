@@ -72,6 +72,14 @@ main {
     width: 100%;
     font-size: 1.1rem;
 
+  &--question {
+    cursor: pointer;
+    transition: color .3s ease;
+  }
+  &--question:hover {
+    color: orangered;
+  }  
+
   span {
     float: right;
   }

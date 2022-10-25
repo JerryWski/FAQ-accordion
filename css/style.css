@@ -89,6 +89,14 @@ main {
   width: 100%;
   font-size: 1.1rem;
 }
+.accordion__box--question {
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.accordion__box--question:hover {
+  color: orangered;
+}
 .accordion__box span {
   float: right;
 }
