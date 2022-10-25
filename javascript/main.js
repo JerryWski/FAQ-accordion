@@ -1,13 +1,15 @@
 const accordionCard = document.querySelector('.accordion');
-const accordionBtns = document.querySelectorAll('.accordion__box--question');
+const accordionQuestions = document.querySelectorAll('.accordion__box--question');
 
 
 function openAccordion () {
     if(this.nextElementSibling.classList.contains('active')) {
         this.nextElementSibling.classList.remove('active')
+        this.style.fontWeight='400'
     }else {
         closeAccordion()
         this.nextElementSibling.classList.toggle('active')
+        this.style.fontWeight='700'
     }
 }
 
@@ -27,7 +29,7 @@ const closeOutsideBars = (e) => {
     }
 
 
-accordionBtns.forEach(btn=> btn.addEventListener('click',openAccordion))
+accordionQuestions.forEach(btn=> btn.addEventListener('click',openAccordion))
 window.addEventListener('click', closeOutsideBars)
 
 
