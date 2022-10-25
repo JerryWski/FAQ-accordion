@@ -92,11 +92,18 @@ main {
 .accordion__box span {
   float: right;
 }
+.accordion__box .rotate-span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .accordion__box .accordion__info {
   color: hsl(240deg, 6%, 50%);
   font-size: 1rem;
   padding: 1em 0;
 }
+.accordion__box .accordion__info--text {
+  display: none;
+}
 .accordion hr {
-  color: hsl(240deg, 12%, 97%);
+  color: hsl(240deg, 5%, 91%);
 }/*# sourceMappingURL=style.css.map */
