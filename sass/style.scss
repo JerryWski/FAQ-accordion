@@ -94,10 +94,10 @@ main {
     font-size: 1rem;
     padding-top: 1em;
     display: none;
+  }
+  .active {
+    display: flex;
     
-    // &--text {
-    //   display: flex;
-    // }
   }
   }
   hr {

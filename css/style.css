@@ -111,6 +111,11 @@ main {
   padding-top: 1em;
   display: none;
 }
+.accordion__box .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .accordion hr {
   margin-top: 1.5em;
   color: hsl(240deg, 20%, 99%);
