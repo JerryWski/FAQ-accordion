@@ -75,7 +75,7 @@ main {
       cursor: pointer;
       transition: color 0.3s ease;
     }
-    
+
     &--question:hover {
       color: orangered;
     }
@@ -91,22 +91,16 @@ main {
       font-size: 1rem;
       padding-top: 1em;
       display: flex;
-      transition: max-height .5s ease-in;
-      // &--text {
-      //   animation: fading .4s ease-out;
-      // }
+      transition: max-height 0.5s ease-in;
     }
-    // .active {
-    //   display: flex;
-    // }
   }
-//testing new approach
+  //testing new approach
   &__box.active .accordion__box--question {
     font-weight: 700;
   }
 
-  &__box.active .accordion__info{
-    animation: fading .4s ease-out;
+  &__box.active .accordion__info {
+    animation: fading 0.4s ease-out;
     max-height: 200px;
   }
 
@@ -115,7 +109,7 @@ main {
   }
 
   img {
-    transition: transform .4s ease-in;
+    transition: transform 0.4s ease-in;
   }
 
   hr {
