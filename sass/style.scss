@@ -15,21 +15,22 @@ html {
   font-family: "Kumbh Sans", sans-serif;
   color: hsl(238, 29%, 16%);
 }
-
-main {
-  margin: auto;
+body {
   background-image: linear-gradient(
     182deg,
     rgba(176, 107, 234, 1) 0%,
     rgba(41, 53, 86, 1) 100%
   );
+}
+
+main {
+  margin: auto;
   max-width: 1440x;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
 
 .accordion {
@@ -55,8 +56,25 @@ main {
   }
 
   &__header {
-    margin: 2em;
+    margin: 1em;
     text-transform: uppercase;
     font-size: 2.5rem;
+  }
+
+  &__box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+  span {
+    float: right;
+  }
+  }
+}
+
+@media (max-width:475px) {
+  .accordion {
+    min-width: 330px;
   }
 }

@@ -17,9 +17,12 @@ html {
   color: hsl(238deg, 29%, 16%);
 }
 
+body {
+  background-image: linear-gradient(182deg, rgb(176, 107, 234) 0%, rgb(41, 53, 86) 100%);
+}
+
 main {
   margin: auto;
-  background-image: linear-gradient(182deg, rgb(176, 107, 234) 0%, rgb(41, 53, 86) 100%);
   max-width: 1440x;
   height: 100vh;
   display: -webkit-box;
@@ -68,7 +71,27 @@ main {
   width: 250px;
 }
 .accordion__header {
-  margin: 2em;
+  margin: 1em;
   text-transform: uppercase;
   font-size: 2.5rem;
+}
+.accordion__box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+.accordion__box span {
+  float: right;
+}
+
+@media (max-width: 475px) {
+  .accordion {
+    min-width: 330px;
+  }
 }/*# sourceMappingURL=style.css.map */
