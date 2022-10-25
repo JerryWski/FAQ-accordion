@@ -1,5 +1,6 @@
 const accordionCard = document.querySelector('.accordion');
 const accordionQuestions = document.querySelectorAll('.accordion__box--question');
+console.log(accordionQuestions);
 
 
 function openAccordion () {

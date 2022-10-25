@@ -81,10 +81,7 @@ main {
 
     span {
       float: right;
-    }
 
-    .rotate-span {
-      transform: rotate(180deg);
     }
 
     .accordion__info {
@@ -92,6 +89,12 @@ main {
       font-size: 1rem;
       padding-top: 1em;
       display: none;
+      transition: max-height 0.8s ease;
+      
+
+      &--text {
+        animation: fading .4s ease-out;
+      }
     }
     .active {
       display: flex;
@@ -100,6 +103,17 @@ main {
   hr {
     margin-top: 1.5em;
     color: hsl(240, 20%, 99%);
+  }
+}
+
+@keyframes fading {
+  from {
+    opacity: 0;
+    transform: translateY(-9x);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
