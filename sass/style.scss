@@ -62,16 +62,25 @@ main {
   }
 
   &__box{
-    width: 100%;
+    padding: .8em;
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 100%;
+    font-size: 1.1rem;
 
   span {
     float: right;
   }
+
+  .accordion__info {
+    line-height: 20px;
+    padding: 1em 0;
+    background-color:rgb(187, 156, 156);
+  }
   }
 }
+
 
 @media (max-width:475px) {
   .accordion {
