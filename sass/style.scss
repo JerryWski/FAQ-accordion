@@ -82,25 +82,42 @@ main {
 
     span {
       float: right;
-
     }
 
     .accordion__info {
+      overflow: hidden;
+      max-height: 0;
       color: hsl(240, 6%, 50%);
       font-size: 1rem;
       padding-top: 1em;
-      display: none;
-      transition: max-height 0.8s ease;
-      
-
-      &--text {
-        animation: fading .4s ease-out;
-      }
-    }
-    .active {
       display: flex;
+      transition: max-height .5s ease-in;
+      // &--text {
+      //   animation: fading .4s ease-out;
+      // }
     }
+    // .active {
+    //   display: flex;
+    // }
   }
+//testing new approach
+  &__box.active .accordion__box--question {
+    font-weight: 700;
+  }
+
+  &__box.active .accordion__info{
+    animation: fading .4s ease-out;
+    max-height: 200px;
+  }
+
+  &__box.active img {
+    transform: rotate(180deg);
+  }
+
+  img {
+    transition: transform .4s ease-in;
+  }
+
   hr {
     margin-top: 1.5em;
     color: hsl(240, 20%, 99%);

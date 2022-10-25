@@ -1,35 +1,17 @@
-const accordionCard = document.querySelector('.accordion');
-const accordionQuestions = document.querySelectorAll('.accordion__box--question');
 
+const accordionQuestions = document.querySelectorAll('.accordion__box');
 
-function openAccordion () {
-    if(this.nextElementSibling.classList.contains('active')) {
-        this.nextElementSibling.classList.remove('active')
-        this.style.fontWeight='400'
-    }else {
-        closeAccordion()
-        this.nextElementSibling.classList.toggle('active')
-        this.style.fontWeight='700'
-    }
-}
-
-const closeAccordion = () => {
-    const answeredItems = document.querySelectorAll('.accordion__info')
-    answeredItems.forEach(item => item.classList.remove('active'))
-}
-
-const closeOutsideBars = (e) => {
-    if(
-        e.target.classList.contains('accordion__box--question') ||
-        e.target.classList.contains('accordion__info') ||
-        e.target.classList.contains('accordion__info--text')
-        )
-        return
-        closeAccordion()
-    }
-
-
-accordionQuestions.forEach(btn=> btn.addEventListener('click',openAccordion))
-window.addEventListener('click', closeOutsideBars)
-
-
+accordionQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        console.log(question);
+        if(question.classList.contains('active')) {
+            question.classList.remove('active')
+        }else {
+            const activeQuestion = document.querySelectorAll(".active");
+            activeQuestion.forEach(questionActivated => {
+                questionActivated.classList.remove('active')
+            })
+            question.classList.add('active')
+        }
+    })
+})

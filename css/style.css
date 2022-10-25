@@ -102,21 +102,34 @@ main {
   float: right;
 }
 .accordion__box .accordion__info {
+  overflow: hidden;
+  max-height: 0;
   color: hsl(240deg, 6%, 50%);
   font-size: 1rem;
   padding-top: 1em;
-  display: none;
-  -webkit-transition: max-height 0.8s ease;
-  transition: max-height 0.8s ease;
-}
-.accordion__box .accordion__info--text {
-  -webkit-animation: fading 0.4s ease-out;
-          animation: fading 0.4s ease-out;
-}
-.accordion__box .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: max-height 0.5s ease-in;
+  transition: max-height 0.5s ease-in;
+}
+.accordion__box.active .accordion__box--question {
+  font-weight: 700;
+}
+.accordion__box.active .accordion__info {
+  -webkit-animation: fading 0.4s ease-out;
+          animation: fading 0.4s ease-out;
+  max-height: 200px;
+}
+.accordion__box.active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.accordion img {
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
 .accordion hr {
   margin-top: 1.5em;
