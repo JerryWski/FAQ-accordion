@@ -91,7 +91,7 @@ main {
       font-size: 1rem;
       padding-top: 1em;
       display: flex;
-      transition: max-height 0.5s ease-in;
+      transition: max-height 0.5s ease;
     }
   }
   //testing new approach
@@ -100,7 +100,7 @@ main {
   }
 
   &__box.active .accordion__info {
-    animation: fading 0.4s ease-out;
+    animation: fading 0.5s ease-out;
     max-height: 200px;
   }
 
@@ -121,7 +121,7 @@ main {
 @keyframes fading {
   from {
     opacity: 0;
-    transform: translateY(-9x);
+    transform: translateY(-11x);
   }
   to {
     opacity: 1;
