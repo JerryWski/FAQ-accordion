@@ -92,19 +92,21 @@ main {
   .accordion__info {
     color: hsl(240, 6%, 50%);
     font-size: 1rem;
-    padding: 1em 0;
+    padding-top: 1em;
+    display: none;
     
-    &--text {
-      display: none;
-    }
+    // &--text {
+    //   display: flex;
+    // }
   }
   }
   hr {
-    color: hsl(240, 5%, 91%);
+    margin-top: 1.5em;
+    color: hsl(240, 20%, 99%);
   }
 }
 
 
-@media (min-width:476px) {
+@media (min-width:475px) {
   
 }

@@ -108,11 +108,10 @@ main {
 .accordion__box .accordion__info {
   color: hsl(240deg, 6%, 50%);
   font-size: 1rem;
-  padding: 1em 0;
-}
-.accordion__box .accordion__info--text {
+  padding-top: 1em;
   display: none;
 }
 .accordion hr {
-  color: hsl(240deg, 5%, 91%);
+  margin-top: 1.5em;
+  color: hsl(240deg, 20%, 99%);
 }/*# sourceMappingURL=style.css.map */
