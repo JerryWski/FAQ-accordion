@@ -12,7 +12,9 @@
 }
 
 html {
-  font-size: 62, 5%;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(238deg, 29%, 16%);
 }
 
 main {
@@ -33,4 +35,25 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.accordion {
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em;
+  max-height: 100%;
 }/*# sourceMappingURL=style.css.map */
