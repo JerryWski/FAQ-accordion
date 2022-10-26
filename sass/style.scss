@@ -25,7 +25,7 @@ body {
 
 main {
   margin: auto;
-  width: 1440px;
+  max-width: 1440px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -146,14 +146,12 @@ main {
 }
 
 @media (min-width: 806px) {
-
   .box-image-container {
     position: relative;
     z-index: 101;
     left: -26%;
-    top:67%;
-    transform: translate(-15%,-58%);
-    
+    top: 67%;
+    transform: translate(-15%, -58%);
   }
   .accordion {
     padding: 5em;
@@ -161,7 +159,6 @@ main {
     width: 800px;
     overflow: hidden;
     position: relative;
-    
 
     &__header {
       visibility: hidden;
@@ -198,17 +195,17 @@ main {
       width: 50%;
       margin-bottom: 11em;
 
-    .accordion__box {
-      z-index: 100;
+      .accordion__box {
+        z-index: 100;
 
-      .box-header {
-        margin: 1em 0;
-        text-transform: uppercase;
-        font-size: 2.5rem;
-        width: 100%;
-        text-align: left;
+        .box-header {
+          margin: 1em 0;
+          text-transform: uppercase;
+          font-size: 2.5rem;
+          width: 100%;
+          text-align: left;
+        }
       }
     }
-  }
   }
 }
