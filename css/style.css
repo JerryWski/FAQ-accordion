@@ -163,6 +163,9 @@ main {
   }
 }
 @media (max-width: 805px) {
+  .box-image-container {
+    display: none;
+  }
   .desktop-box {
     display: none;
   }
@@ -178,7 +181,7 @@ main {
     position: relative;
     z-index: 101;
     left: -26%;
-    top: 74%;
+    top: 67%;
     -webkit-transform: translate(-15%, -58%);
             transform: translate(-15%, -58%);
   }
