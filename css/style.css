@@ -38,6 +38,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .accordion {
@@ -162,6 +163,9 @@ main {
   }
 }
 @media (max-width: 805px) {
+  .desktop-box {
+    display: none;
+  }
   .box-header {
     visibility: hidden;
   }
@@ -170,6 +174,14 @@ main {
   }
 }
 @media (min-width: 806px) {
+  .box-image-container {
+    position: fixed;
+    z-index: 101;
+    left: 25%;
+    top: 57%;
+    -webkit-transform: translate(-15%, -58%);
+            transform: translate(-15%, -58%);
+  }
   .accordion {
     padding: 5em;
     max-height: 500px;
