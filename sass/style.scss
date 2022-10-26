@@ -129,5 +129,53 @@ main {
   }
 }
 
-@media (min-width: 475px) {
+@media (max-width:475px) {
+  .bg-container {
+    display: none;
+
+  }
+}
+
+@media (min-width: 476px) {
+.accordion {
+  max-height: 500px;
+  width: 800px;
+  overflow: hidden;
+  position: relative;
+
+  &__image {
+    display: none;
+  }
+
+  &__bg--image {
+    display: none;
+  }
+  .bg-container {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+
+    .desktop-img {
+      
+      position: absolute;
+      top:20%;
+      left: -65%;
+      width:400px;
+      z-index: 10;
+      
+    }
+    .desktop-bg {
+      position: absolute;
+      left: -185%;
+      top: -50%;
+      width: 900px;
+    }
+  }
+
+  &__box {
+    width: 50%;
+    margin-left:auto;
+  }
+}
+
 }

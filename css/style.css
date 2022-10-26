@@ -160,4 +160,45 @@ main {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+@media (max-width: 475px) {
+  .bg-container {
+    display: none;
+  }
+}
+@media (min-width: 476px) {
+  .accordion {
+    max-height: 500px;
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+  }
+  .accordion__image {
+    display: none;
+  }
+  .accordion__bg--image {
+    display: none;
+  }
+  .accordion .bg-container {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+  }
+  .accordion .bg-container .desktop-img {
+    position: absolute;
+    top: 20%;
+    left: -65%;
+    width: 400px;
+    z-index: 10;
+  }
+  .accordion .bg-container .desktop-bg {
+    position: absolute;
+    left: -185%;
+    top: -50%;
+    width: 900px;
+  }
+  .accordion__box {
+    width: 50%;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
