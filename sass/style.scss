@@ -140,6 +140,7 @@ main {
 
 @media (min-width: 806px) {
   .accordion {
+    padding: 5em;
     max-height: 500px;
     width: 800px;
     overflow: hidden;
@@ -173,23 +174,25 @@ main {
         left: -185%;
         top: -50%;
         width: 900px;
-        z-index: 2;
       }
     }
-
-    &__box {
-      
+    .boxes {
       z-index: 100;
-      width: 50%;
       margin-left: auto;
+      width: 50%;
+      margin-bottom: 11em;
+
+    .accordion__box {
+      z-index: 100;
 
       .box-header {
-        margin: .5em 0;
+        margin: 1em 0;
         text-transform: uppercase;
         font-size: 2.5rem;
         width: 100%;
         text-align: left;
       }
     }
+  }
   }
 }
