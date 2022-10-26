@@ -23,7 +23,7 @@ body {
 
 main {
   margin: auto;
-  max-width: 1440x;
+  width: 1440px;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,10 +175,10 @@ main {
 }
 @media (min-width: 806px) {
   .box-image-container {
-    position: fixed;
+    position: relative;
     z-index: 101;
-    left: 25%;
-    top: 57%;
+    left: -26%;
+    top: 74%;
     -webkit-transform: translate(-15%, -58%);
             transform: translate(-15%, -58%);
   }
